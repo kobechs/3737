@@ -1,0 +1,159 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #162447;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #e94560;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: #f3f3f3;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 5px;
+}
+
+.task-form, .calendar, .storage-clear {
+    margin-bottom: 20px;
+}
+
+.task-form input[type="text"], .task-form select, .task-form input[type="date"],
+.calendar input[type="date"] {
+    width: calc(33% - 10px);
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #1f4068;
+    color: #e0e0e0;
+    border: 1px solid #1b1b2f;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.task-form button, .calendar button, .storage-clear button {
+    padding: 10px 15px;
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.task-form button:hover, .calendar button:hover, .storage-clear button:hover {
+    background-color: #ff2e55;
+}
+
+.task-list ul, .calendar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.task-list li {
+    background-color: #1f4068;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.task-list li.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.high {
+    border-left: 4px solid #e94560;
+}
+
+.medium {
+    border-left: 4px solid #ff9a3c;
+}
+
+.low {
+    border-left: 4px solid #18a558;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: #1f4068;
+    color: #e0e0e0;
+    cursor: pointer;
+    border: 1px solid #1b1b2f;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4e5d6c;
+}
+
+progress {
+    width: 100%;
+    height: 12px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #e94560;
+    border-radius: 5px;
+}
+
+#taskInput, #priorityInput, #deadlineInput, #eventDateInput {
+    font-size: 0.9rem;
+}
+
+.storage-clear {
+    text-align: center;
+}
+
+#clearStorageButton {
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#clearStorageButton:hover {
+    background-color: #ff2e55;
+}

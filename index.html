@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/config.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Time's protector</h1>
+
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="タスクを入力" />
+            <select id="priorityInput">
+                <option value="high">高</option>
+                <option value="medium">中</option>
+                <option value="low">低</option>
+            </select>
+            <input type="date" id="deadlineInput" />
+            <button id="addTaskButton">タスクを追加</button>
+        </div>
+
+        <div class="task-list">
+            <h2>ToDo taskList</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="calendar">
+            <h2>検定・テストカレンダー</h2>
+            <input type="date" id="eventDateInput" />
+            <button id="addEventButton">イベントを追加</button>
+            <ul id="eventList"></ul>
+        </div>
+
+        <div class="storage-clear">
+            <button id="clearStorageButton">すべてのデータを削除</button>
+        </div>
+    </div>
+</body>
+</html>
